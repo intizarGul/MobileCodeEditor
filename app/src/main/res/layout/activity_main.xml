@@ -1,18 +1,30 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
-    <TextView
+
+    <AutoCompleteTextView
+        android:id="@+id/playGroundCode"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/runCode"
+        android:fontFamily="casual"
+        android:hint="Enter your code here"
+        android:textAlignment="center"
+        android:textColor="@android:color/background_dark" />
+
+    <Button
+        android:id="@+id/runCode"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Hello World!"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
-</androidx.constraintlayout.widget.ConstraintLayout>
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="5dp"
+        android:background="?android:attr/navigationBarColor"
+        android:text="Run Code"
+        android:textColor="@android:color/background_light" />
+</RelativeLayout>
