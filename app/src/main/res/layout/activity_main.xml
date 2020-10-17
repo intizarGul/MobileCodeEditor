@@ -14,7 +14,8 @@
         android:layout_above="@id/runCode"
         android:fontFamily="casual"
         android:hint="Enter your code here"
-        android:textAlignment="center"
+        android:paddingLeft="6dp"
+        android:textAlignment="viewStart"
         android:textColor="@android:color/background_dark" />
 
     <Button
